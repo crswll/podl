@@ -1,0 +1,34 @@
+@media ( min-width: 760px ){
+
+  .btn {
+    display: inline-block;
+    width: auto;
+    font-size: em( 18 );
+  }
+
+  .main {
+    width: 95%;
+  }
+
+  .intro {
+    margin-bottom: 1.5em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid $lightGray;
+  }
+  .main .block {
+    border-bottom-width: 0;
+    overflow: hidden;
+    margin: 2em 0;
+    padding: 1em;
+    .block-header {
+      float: left;
+      width: 34%;
+      padding-right: 3%;
+      text-align: right;
+    }
+    .block-body {
+      float: left;
+      width: 66%;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<footer class="footer" role="contentinfo">
+  <section class="block social">
+    <h3 class="block-header">Social</h3>
+    <div class="block-body">
+      <ul>
+        {% for site in global.social %}
+          <li><a class="social-{{ site.class }}" href="{{ site.url }}">{{ site.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+  <section class="block social">
+    <h3 class="block-header">Social</h3>
+    <div class="block-body">
+      <ul>
+        {% for site in global.social %}
+          <li><a class="social-{{ site.class }}" href="{{ site.url }}">{{ site.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+  <section class="copyright">
+    <small>Copyright {{ 'now' | date: '%Y' }}. All Rights Reserved.</small>
+  </section>
+</footer>

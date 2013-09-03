@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  border-top: 4px solid $red;
+  background: transparent url("../img/devices.png") no-repeat 105% -20px;
+}
+
+.header {
+  .logo {
+    display: none;
+  }
+}
+
+.footer {
+  padding: .5em 0;
+  height: 300px;
+  background-color: rgba( $lightGray, .3 );
+}
+
+.main {
+  @include clearfix;
+  padding: 1em;
+}
+
+.block {
+  padding: 1.5em 0;
+}
+
+.pages {
+  text-align: center;
+  margin: 0 auto .3em auto;
+  overflow: hidden;
+  width: 95%;
+  li {
+    display: inline;
+  }
+  a {
+    width: 25%;
+    float: left;
+    padding: .85em 0 .35em 0;
+    color: $darkGray;
+    font-size: 1.1em;
+    position: relative;
+    &.is-active {
+      color: $red;
+    }
+    &.is-active:after {
+      position: absolute;
+      margin: 0;
+      top: 0;
+      width: 0;
+      height: 0;
+      left: 45%;
+      content: ' ';
+      @include triangle( 15px, $red, down );
+    }
+  }
+}
+
+.intro {
+  .muted {
+    color: $gray;
+    display: block;
+    font-size: .825em;
+    color: $red;
+  }
+  .title {
+    font-size: 2.675em;
+    line-height: 1.05em;
+    margin-bottom: .5em;
+  }
+  .lead {
+    margin: 0;
+    font-size: 1.65em;
+    color: $darkGray;
+  }
+}

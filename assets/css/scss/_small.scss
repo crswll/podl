@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  background: transparent url("../img/devices.png") no-repeat 105% -20px;
+  background-attachment: fixed;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+}
+
+.header {
+  .logo {
+    display: none;
+  }
+}
+
+.footer {
+  background-color: $red;
+  color: #fff;
+  position: relative;
+  // padding: .3em;
+  &:before {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 0;
+    height: 1px;
+    content: " ";
+    box-shadow: 0 0 10px rgba(0, 0, 0, .9);
+  }
+  a {
+    color: #fff;
+  }
+}
+
+.block {
+  padding: 2em 1em;
+  border-bottom: 1px solid $lightGray;
+  &:last-child {
+    border-bottom-width: 0;
+  }
+  .block-header {
+    margin: 0 0 .5em 0;
+  }
+}
+
+.main {
+  @include clearfix;
+  margin: 1em auto;
+  position: relative;
+}
+
+.pages {
+  border-top: 4px solid $red;
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;  
+  li {
+    display: inline;
+  }
+  a {
+    width: 25%;
+    float: left;
+    padding: 1em 0;
+    color: $darkGray;
+    font-size: em(16);
+    position: relative;
+    &.is-active {
+      color: $red;
+    }
+    &.is-active:after {
+      position: absolute;
+      margin: 0;
+      top: 0;
+      width: 0;
+      height: 0;
+      left: 45%;
+      content: ' ';
+      @include triangle( 15px, $red, down );
+    }
+  }
+}
+
+.intro {
+  padding-top: 0;
+  padding-bottom: 2em;
+  .muted {
+    color: $gray;
+    display: block;
+    font-size: em( 38, 46 );
+    color: $red;
+  }
+  .title {
+    font-size: em(46);
+    line-height: 1.05em;
+    margin-bottom: .5em;
+  }
+  .lead {
+    margin: 0;
+    font-size: em(26);
+    color: $darkGray;
+  }
+}
+
+.visit {
+  address {
+    margin: 1em 0;
+    font-style: normal;
+    color: red;
+  }
+}
+
+.contribute {
+  fieldset {
+    border: 1px solid $lightGray;
+    padding: 1em;
+    border-radius: 5px;
+    legend {
+      font-size: em( 24 );
+    }
+  }
+  .form-group {
+    margin: 0 0 .5em 0;
+    label {
+      margin: 0 0 .2em 0;
+      display: block;
+      font-weight: bold;
+    }
+    textarea {
+      height: 200px;
+    }
+  }
+}
+
+#map-canvas {
+  height: 350px;
+  width: 100%;
+  border: 1px solid $red;
+  margin: 0 0 .5em 0;
+}

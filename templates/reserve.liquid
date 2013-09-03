@@ -1,0 +1,33 @@
+{% block title %}Reserve Some Time!{% endblock %}
+
+{% block content %}
+
+  <section class="block">
+    <h1>Reserve</h1>
+    <h2>Schedule a block of time to stop by!</h2>
+    <fieldset>
+      <form action="/reserve/add">
+        <legend>Let Us Know When You'll Be By</legend>
+        <div class="group">
+          <label for="name">Name</label>
+          <div class="group-controls">
+            <input type="text" name="name" placeholder="Jim Lahey">
+          </div>
+        </div>
+        <div class="group">
+          <label for="name">Email</label>
+          <div class="group-controls">
+            <input type="email" name="email" placeholder="jim.lahey@sunnyvale.ca">
+          </div>
+        </div>
+        <div class="group">
+          <label for="name">Message</label>
+          <div class="group-controls">
+            <textarea name="message" placeholder="The liquor is calling the shots, Bo Babandy"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="button">Reserve</button>
+      </form>
+    </fieldset>
+  </section>
+{% endblock %}
