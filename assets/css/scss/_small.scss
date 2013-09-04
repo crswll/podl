@@ -9,6 +9,17 @@ body {
   width: 100%;
 }
 
+.block {
+  padding: 2em 1em;
+  border-bottom: 1px solid $lightGray;
+  &:last-child {
+    border-bottom-width: 0;
+  }
+  .block-header {
+    margin: 0 0 .5em 0;
+  }
+}
+
 .header {
   .logo {
     display: none;
@@ -20,6 +31,10 @@ body {
   color: #fff;
   position: relative;
   // padding: .3em;
+  .block {
+    border-bottom-width: 0;
+    padding: .5em 1em;
+  }
   &:before {
     position: absolute;
     display: block;
@@ -32,16 +47,10 @@ body {
   a {
     color: #fff;
   }
-}
-
-.block {
-  padding: 2em 1em;
-  border-bottom: 1px solid $lightGray;
-  &:last-child {
-    border-bottom-width: 0;
-  }
-  .block-header {
-    margin: 0 0 .5em 0;
+  .copyright {
+    padding: .5em;
+    text-align: center;
+    background-color: darken( $red, 15% );
   }
 }
 
