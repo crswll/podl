@@ -31,7 +31,7 @@
   "devices":[{
     "name": "iPhone 5",
     "brand": "Apple",
-    "os": "iOS 6.1.4",
+    "os": "6.1.4",
     "contributer": {
       "name": "Bill Criswell",
       "url": "http://twitter.com/crswll"
@@ -39,7 +39,7 @@
   },{
     "name": "iPhone 4S",
     "brand": "Apple",
-    "os": "iOS 6.1.4",
+    "os": "6.1.4",
     "contributer": {
       "name": "Whitney Krape",
       "url": "http://twitter.com/whitneykrape"
@@ -47,7 +47,7 @@
   },{
     "name": "iPhone 4",
     "brand": "Apple",
-    "os": "iOS 6.1.4",
+    "os": "6.1.4",
     "contributer": {
       "name": "Jim Bob",
       "url": "http://twitter.com/jb"
@@ -55,7 +55,7 @@
   },{
     "name": "iPhone 3S",
     "brand": "Apple",
-    "os": "iOS 5",
+    "os": "5",
     "contributer": {
       "name": "JoJo",
       "url": "http://twitter.com/killerklownfromouterspace"
@@ -63,7 +63,7 @@
   },{
     "name": "iPad Mini",
     "brand": "Apple",
-    "os": "iOS 6.1.4",
+    "os": "6.1.4",
     "contributer": {
       "name": "Bill Criswell",
       "url": "http://twitter.com/crswll"
@@ -71,7 +71,7 @@
   },{
     "name": "iPad",
     "brand": "Apple",
-    "os": "iOS 6.1.4",
+    "os": "6.1.4",
     "contributer": {
       "name": "Bill Criswell",
       "url": "http://twitter.com/crswll"

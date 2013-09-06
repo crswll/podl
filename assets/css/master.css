@@ -345,10 +345,10 @@ table {
     text-align: left; }
   /* line 63, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_base.scss */
   table th, table td {
-    padding: .6em .3em; }
-  /* line 66, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_base.scss */
+    padding: .6em .3em;
+    border-bottom: 1px solid #eeeeee; }
+  /* line 67, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_base.scss */
   table th, table tr:nth-child(odd) td {
-    border-bottom: 1px solid #eeeeee;
     background-color: rgba(238, 238, 238, 0.15); }
 
 /* line 72, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_base.scss */
@@ -406,113 +406,101 @@ body {
   background-attachment: fixed; }
 
 /* line 7, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
-.btn {
-  display: block;
-  width: 100%; }
-
-/* line 12, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
-.block {
-  padding: 2em 1em;
-  border-bottom: 1px solid #eeeeee; }
-  /* line 15, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
-  .block:last-child {
-    border-bottom-width: 0; }
-  /* line 18, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
-  .block .block-header {
-    margin: 0 0 .5em 0; }
-
-/* line 24, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
-.header .logo {
-  display: none; }
-
-/* line 29, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
-.footer {
-  background-color: #bf0c00;
-  color: #fff;
-  position: relative; }
-  /* line 34, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
-  .footer .block {
-    border-bottom-width: 0;
-    padding: .5em 1em; }
-  /* line 38, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
-  .footer:before {
-    position: absolute;
-    display: block;
-    width: 100%;
-    top: 0;
-    height: 1px;
-    content: " ";
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); }
-  /* line 47, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
-  .footer a {
-    color: #fff; }
-  /* line 50, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
-  .footer .copyright {
-    padding: .5em;
-    text-align: center;
-    background-color: #730700; }
-
-/* line 57, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
-.main {
-  margin: 1em auto;
-  position: relative; }
+.container {
+  margin: 0 auto;
+  width: 95%; }
   /* line 15, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/bourbon/addons/_clearfix.scss */
-  .main:after {
+  .container:after {
     content: "";
     display: table;
     clear: both; }
 
-/* line 63, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
+/* line 13, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
+.header {
+  padding: .75em 0;
+  margin-bottom: 1.5em;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.25);
+  background-color: #bf0c00; }
+  /* line 18, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
+  .header .logo {
+    text-align: center;
+    padding: 0 0 .75em 0;
+    font-size: 1.5em; }
+    /* line 22, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
+    .header .logo a {
+      color: #fff; }
+
+/* line 28, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
 .pages {
-  border-top: 4px solid #bf0c00;
   text-align: center;
   margin: 0 auto;
   overflow: hidden; }
-  /* line 68, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
+  /* line 32, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
   .pages li {
-    display: inline; }
-  /* line 71, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
-  .pages a {
     width: 25%;
-    float: left;
-    padding: 1em 0;
-    color: #222222;
-    font-size: 1em;
-    position: relative; }
-    /* line 78, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
+    float: left; }
+  /* line 36, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
+  .pages a {
+    color: #fff;
+    display: inline-block; }
+    /* line 39, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
     .pages a.is-active {
-      color: #bf0c00; }
-    /* line 81, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
-    .pages a.is-active:after {
-      position: absolute;
-      margin: 0;
-      top: 0;
-      width: 0;
-      height: 0;
-      left: 45%;
-      content: ' ';
-      height: 0;
-      width: 0;
-      border-color: transparent;
-      border-style: solid;
-      border-width: 7.5px;
-      border-top-color: #bf0c00; }
+      border-bottom: 3px solid #fff;
+      color: #fff;
+      padding-bottom: .2em; }
 
-/* line 94, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
+/* line 57, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
+.btn {
+  display: block;
+  width: 100%; }
+
+/* line 62, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
+.block {
+  padding: 2em 0;
+  border-bottom: 1px solid #eeeeee; }
+  /* line 65, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
+  .block:last-child {
+    border-bottom-width: 0; }
+  /* line 68, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
+  .block .block-header {
+    margin: 0 0 .5em 0; }
+
+/* line 73, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
+.footer {
+  border-top: 3px solid rgba(0, 0, 0, 0.25);
+  background-color: #bf0c00;
+  color: #fff;
+  position: relative; }
+  /* line 78, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
+  .footer .block {
+    border-bottom-width: 0;
+    padding: .5em 1em; }
+  /* line 82, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
+  .footer a {
+    color: #fff; }
+  /* line 85, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
+  .footer .copyright {
+    padding: .5em;
+    text-align: center;
+    background-color: #730700;
+    box-shadow: -15rem 0 0 #730700, 15rem 0 0 #730700; }
+
+/* line 93, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
 .intro {
   padding-top: 0;
   padding-bottom: 2em; }
-  /* line 97, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
+  /* line 96, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
   .intro .muted {
     color: #666666;
     display: block;
     font-size: 0.82609em;
     color: #bf0c00; }
-  /* line 103, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
+  /* line 102, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
   .intro .title {
     font-size: 2.875em;
     line-height: 1.05em;
-    margin-bottom: .5em; }
+    margin-bottom: .5em;
+    width: 50%; }
   /* line 108, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
   .intro .lead {
     margin: 0;
@@ -524,33 +512,33 @@ body {
   margin: 1em 0;
   font-style: normal;
   color: red; }
+/* line 121, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
+.visit .map-canvas {
+  height: 250px;
+  width: 100%;
+  border: 1px solid #bf0c00;
+  margin: 0 0 .5em 0; }
 
-/* line 124, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
+/* line 130, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
 .contribute fieldset {
   border: 1px solid #eeeeee;
   padding: 1em;
   border-radius: 5px; }
-  /* line 128, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
+  /* line 134, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
   .contribute fieldset legend {
-    font-size: 1.5em; }
-/* line 132, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
+    font-size: 1.5em;
+    display: none; }
+/* line 139, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
 .contribute .form-group {
   margin: 0 0 .5em 0; }
-  /* line 134, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
+  /* line 141, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
   .contribute .form-group label {
     margin: 0 0 .2em 0;
     display: block;
     font-weight: bold; }
-  /* line 139, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
+  /* line 146, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
   .contribute .form-group textarea {
     height: 200px; }
-
-/* line 145, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_small.scss */
-#map-canvas {
-  height: 350px;
-  width: 100%;
-  border: 1px solid #bf0c00;
-  margin: 0 0 .5em 0; }
 
 @media (min-width: 760px) {
   /* line 3, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_medium.scss */
@@ -560,28 +548,54 @@ body {
     font-size: 1.125em; }
 
   /* line 9, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_medium.scss */
-  .main {
-    width: 95%; }
+  .container {
+    width: 90%; }
 
-  /* line 13, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_medium.scss */
+  /* line 14, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_medium.scss */
+  .header .logo {
+    text-align: left;
+    float: left;
+    width: 60%;
+    margin: 0;
+    padding: 0; }
+  /* line 21, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_medium.scss */
+  .header .pages {
+    float: left;
+    width: 40%; }
+
+  /* line 27, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_medium.scss */
+  .pages {
+    margin-top: .3em; }
+
+  /* line 31, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_medium.scss */
   .intro {
     margin-bottom: 1.5em;
     padding-bottom: 2em;
     border-bottom: 1px solid #eeeeee; }
+    /* line 35, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_medium.scss */
+    .intro .title {
+      width: auto; }
 
-  /* line 18, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_medium.scss */
+  /* line 41, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_medium.scss */
+  .visit .map-canvas {
+    height: 350px;
+    width: 100%;
+    border: 1px solid #bf0c00;
+    margin: 0 0 .5em 0; }
+
+  /* line 49, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_medium.scss */
   .main .block {
     border-bottom-width: 0;
     overflow: hidden;
     margin: 2em 0;
-    padding: 1em; }
-    /* line 23, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_medium.scss */
+    padding: 1em 0; }
+    /* line 54, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_medium.scss */
     .main .block .block-header {
       float: left;
       width: 34%;
       padding-right: 3%;
       text-align: right; }
-    /* line 29, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_medium.scss */
+    /* line 60, /Applications/MAMP/htdocs/open-device-lab/assets/css/scss/_medium.scss */
     .main .block .block-body {
       float: left;
       width: 66%; } }

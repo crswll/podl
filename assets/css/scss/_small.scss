@@ -4,13 +4,63 @@ body {
   background-attachment: fixed;
 }
 
+.container {
+  @include clearfix;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.header {
+  padding: .75em 0;
+  margin-bottom: 1.5em;
+  border-bottom: 3px solid rgba( 0, 0, 0, .25 );
+  background-color: $red;
+  .logo {
+    text-align: center;
+    padding: 0 0 .75em 0;
+    font-size: em(24);
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.pages {
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;  
+  li {
+    width: 25%;
+    float: left;
+  }
+  a {
+    color: #fff;
+    display: inline-block;
+    &.is-active {
+      border-bottom: 3px solid #fff;
+      color: #fff;
+      padding-bottom: .2em;
+    }
+    // &.is-active:after {
+    //   position: absolute;
+    //   margin: 0;
+    //   top: 0;
+    //   width: 0;
+    //   height: 0;
+    //   left: 45%;
+    //   content: ' ';
+    //   @include triangle( 15px, $red, down );
+    // }
+  }
+}
+
 .btn {
   display: block;
   width: 100%;
 }
 
 .block {
-  padding: 2em 1em;
+  padding: 2em 0;
   border-bottom: 1px solid $lightGray;
   &:last-child {
     border-bottom-width: 0;
@@ -20,29 +70,14 @@ body {
   }
 }
 
-.header {
-  .logo {
-    display: none;
-  }
-}
-
 .footer {
+  border-top: 3px solid rgba( 0, 0, 0, .25 );
   background-color: $red;
   color: #fff;
   position: relative;
-  // padding: .3em;
   .block {
     border-bottom-width: 0;
     padding: .5em 1em;
-  }
-  &:before {
-    position: absolute;
-    display: block;
-    width: 100%;
-    top: 0;
-    height: 1px;
-    content: " ";
-    box-shadow: 0 0 10px rgba(0, 0, 0, .9);
   }
   a {
     color: #fff;
@@ -51,43 +86,7 @@ body {
     padding: .5em;
     text-align: center;
     background-color: darken( $red, 15% );
-  }
-}
-
-.main {
-  @include clearfix;
-  margin: 1em auto;
-  position: relative;
-}
-
-.pages {
-  border-top: 4px solid $red;
-  text-align: center;
-  margin: 0 auto;
-  overflow: hidden;  
-  li {
-    display: inline;
-  }
-  a {
-    width: 25%;
-    float: left;
-    padding: 1em 0;
-    color: $darkGray;
-    font-size: em(16);
-    position: relative;
-    &.is-active {
-      color: $red;
-    }
-    &.is-active:after {
-      position: absolute;
-      margin: 0;
-      top: 0;
-      width: 0;
-      height: 0;
-      left: 45%;
-      content: ' ';
-      @include triangle( 15px, $red, down );
-    }
+    box-shadow: -15rem 0 0 darken($red,15%), 15rem 0 0 darken($red,15%)
   }
 }
 
@@ -104,6 +103,7 @@ body {
     font-size: em(46);
     line-height: 1.05em;
     margin-bottom: .5em;
+    width: 50%;
   }
   .lead {
     margin: 0;
@@ -118,6 +118,12 @@ body {
     font-style: normal;
     color: red;
   }
+  .map-canvas {
+    height: 250px;
+    width: 100%;
+    border: 1px solid $red;
+    margin: 0 0 .5em 0;
+  }
 }
 
 .contribute {
@@ -127,6 +133,7 @@ body {
     border-radius: 5px;
     legend {
       font-size: em( 24 );
+      display: none;
     }
   }
   .form-group {
@@ -142,9 +149,4 @@ body {
   }
 }
 
-#map-canvas {
-  height: 350px;
-  width: 100%;
-  border: 1px solid $red;
-  margin: 0 0 .5em 0;
-}
+

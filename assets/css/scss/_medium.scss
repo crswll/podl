@@ -6,20 +6,51 @@
     font-size: em( 18 );
   }
 
-  .main {
-    width: 95%;
+  .container {
+    width: 90%;
+  }
+
+  .header {
+    .logo {
+      text-align: left;
+      float: left;
+      width: 60%;
+      margin: 0;
+      padding: 0;
+    }
+    .pages {
+      float: left;
+      width: 40%;
+    }
+  }
+
+  .pages {
+    margin-top: .3em;
   }
 
   .intro {
     margin-bottom: 1.5em;
     padding-bottom: 2em;
     border-bottom: 1px solid $lightGray;
+    .title {
+      width: auto;
+    }
   }
+
+  .visit {
+    .map-canvas {
+      height: 350px;
+      width: 100%;
+      border: 1px solid $red;
+      margin: 0 0 .5em 0;
+    }
+  }
+
   .main .block {
     border-bottom-width: 0;
     overflow: hidden;
     margin: 2em 0;
-    padding: 1em;
+    padding: 1em 0;
     .block-header {
       float: left;
       width: 34%;
@@ -31,4 +62,5 @@
       width: 66%;
     }
   }
+
 }
