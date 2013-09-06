@@ -62,9 +62,9 @@ table {
   }
   th, td {
     padding: .6em .3em;
+    border-bottom: 1px solid $lightGray;
   }
   th, tr:nth-child(odd) td {
-    border-bottom: 1px solid $lightGray;
     background-color: rgba( $lightGray, .15 );
   }
 }

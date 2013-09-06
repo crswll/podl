@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,700,300,600">
     <link rel="stylesheet" href="{{ 'master.css' | asset_url }}">
-
   </head>
   <body class="page-{{ mixture.url }}">
     {% include "header" %}
       <main class="main" role="main">
-        {% block content %}{% endblock %}
+        <div class="container">
+          {% block content %}{% endblock %}
+        </div>
       </main>
     {% include "footer" %}
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

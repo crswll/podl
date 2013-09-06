@@ -20,26 +20,23 @@ $('.btn').on('click', function(e){
 
   var map = new google.maps.Map( document.getElementById("map-canvas"), map_options );
 
-  // var marker = new google.maps.Marker({
-  //   position: benjamins_desk,
-  //   map: map,
-  //   draggable: false,
-  //   animation: google.maps.Animation.DROP
-  // });
+  var marker = new google.maps.Marker({
+    position: benjamins_desk,
+    map: map,
+    draggable: false,
+    animation: google.maps.Animation.DROP
+  });
 
   var info = new google.maps.InfoWindow({
     position: benjamins_desk,
-    content: "<p><strong>Benjamin's Desk</strong><br>1701 Walnut St<br> Philadelphia, PA 19103</p>",
-    map: map
+    content: "<p><strong>We're Inside Benjamin's Desk</strong><br>1701 Walnut St<br> Philadelphia, PA 19103</p>",
   });
 
-  // info.open( map, marker );
-
-  // google.maps.event.addListener( marker, 'click', function(){
-  //   map.setZoom(19);
-  //   map.setCenter( benjamins_desk );
-  //   info.open( map, marker );
-  // });
+  google.maps.event.addListener( marker, 'click', function(){
+    map.setZoom(19);
+    map.setCenter( benjamins_desk );
+    info.open( map, marker );
+  });
 
   
 

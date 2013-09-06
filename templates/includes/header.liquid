@@ -1,12 +1,14 @@
 <header class="header" role="banner">
-  <h1 class="logo">
-    <a href="#">PODL</a>
-  </h1>
-  <nav class="pages underline" role="navigation">
-    <ul>
-      {% for page in global.pages %}
-        <li><a href="{{ page.url | prepend: '/' | replace_first: 'index', '' }}" {% if mixture.url == page.url %}class="is-active"{% endif %}>{{ page.name }}</a></li>
-      {% endfor %}
-    </ul>
-  </nav>
+  <div class="container">
+    <h1 class="logo">
+      <a href="/">Philly <strong>Open Device Lab</strong></a>
+    </h1>
+    <nav class="pages" role="navigation">
+      <ul>
+        {% for page in global.pages %}
+          <li><a href="{{ page.url | prepend: '/' | replace_first: 'index', '' }}" {% if mixture.url == page.url %}class="is-active"{% endif %}>{{ page.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
 </header>
