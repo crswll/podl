@@ -111,8 +111,9 @@ a {
 
 input, textarea {
   border: 1px solid $lightGray;
-  padding: .3em;
+  padding: .5em;
   display: block;
   width: 100%;
   border-radius: 5px;
+  background-color: rgba( #fff, .8 );
 }
